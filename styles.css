@@ -23,3 +23,39 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+/* ==========================================================================
+  General 
+  ========================================================================== */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+/* ==========================================================================
+  Dropdown 
+  ========================================================================== */
+
+.dropdown-button {
+  border: 1px solid;
+  padding: 0.5em 1em;
+}
+
+.dropdown-button:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.dropdown-button div::after {
+  content: "";
+  clip-path: polygon(100% 37.5%, 100% 52.5%, 50% 62.5%, 0% 52.5%, 0% 37.5%, 50% 47.5%);
+  border: 0.4em solid black;
+  margin-left: 1em;
+}
+
+.dropdown-content {
+  visibility: hidden;
+}
