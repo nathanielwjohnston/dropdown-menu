@@ -35,6 +35,11 @@ body {
   place-items: center;
 }
 
+#main {
+  display: flex;
+  gap: 2em;
+}
+
 /* ==========================================================================
   Dropdown 
   ========================================================================== */
@@ -46,6 +51,7 @@ body {
 .dropdown-button {
   border: 1px solid;
   padding: 0.5em 1em;
+  background-color: white;
 }
 
 .dropdown-button:hover, .dropdown-item:hover {
@@ -63,6 +69,7 @@ body {
 .dropdown-content {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .dropdown-menu.closed .dropdown-content {
