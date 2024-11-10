@@ -5,7 +5,6 @@ const menus = document.querySelectorAll(".dropdown-menu");
 body.addEventListener("click", e => {
   menus.forEach(menu => {
     if (menu.contains(e.target)) {
-      const content = menu.querySelector(".dropdown-content");
       if (menu.classList.contains("closed")) {
         menu.classList.remove("closed");
         menu.classList.add("open");

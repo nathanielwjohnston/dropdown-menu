@@ -39,6 +39,10 @@ body {
   Dropdown 
   ========================================================================== */
 
+.dropdown-menu {
+  position: relative;
+}
+
 .dropdown-button {
   border: 1px solid;
   padding: 0.5em 1em;
@@ -56,6 +60,11 @@ body {
   margin-left: 1em;
 }
 
+.dropdown-content {
+  position: absolute;
+  width: 100%;
+}
+
 .dropdown-menu.closed .dropdown-content {
   visibility: hidden;
 }
@@ -65,6 +74,9 @@ body {
 }
 
 .dropdown-item {
-  border: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
   padding: 0.5em 1em;
+  background-color: white;
 }
