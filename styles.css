@@ -44,7 +44,7 @@ body {
   padding: 0.5em 1em;
 }
 
-.dropdown-button:hover {
+.dropdown-button:hover, .dropdown-item:hover {
   cursor: pointer;
   background-color: lightgrey;
 }
@@ -56,6 +56,15 @@ body {
   margin-left: 1em;
 }
 
-.dropdown-content {
+.dropdown-menu.closed .dropdown-content {
   visibility: hidden;
+}
+
+.dropdown-menu.open .dropdown-content {
+  visibility: visible;
+}
+
+.dropdown-item {
+  border: 1px solid;
+  padding: 0.5em 1em;
 }

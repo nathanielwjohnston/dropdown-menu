@@ -7,11 +7,9 @@ body.addEventListener("click", e => {
     if (menu.contains(e.target)) {
       const content = menu.querySelector(".dropdown-content");
       if (menu.classList.contains("closed")) {
-        content.style.visibility = "visible";
         menu.classList.remove("closed");
         menu.classList.add("open");
       } else if (menu.classList.contains("open")) {
-        content.style.visibility = "hidden";
         menu.classList.remove("open");
         menu.classList.add("closed");
       }
